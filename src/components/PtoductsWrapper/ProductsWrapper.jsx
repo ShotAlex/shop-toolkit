@@ -15,7 +15,6 @@ const ProductsWrapper = () => {
   const currentPage = useParams().page || 1
   // const [isPublished, setIsPublished] = useState(true)
 
-
   if (!isLoaded) {
     return <h2>Loading...</h2>
   }
@@ -44,30 +43,20 @@ const ProductsWrapper = () => {
 
   const getWrapperProducts = (arr) => <ProductsList data={arr}/>
 
-
   return (
-    <div>
       <Tabs data={[
         {
           title: 'Продукты',
           value: getWrapperProducts(allProducts),
           arrLength: data.length,
-
         },
         {
           title: 'Созданные',
           value: getWrapperProducts(createdProducts),
-          // arrLength: data.filter((product) => (product.published)).length,
-          arrLength: 7,
+          arrLength: data.filter((product) => (product.published)).length,
         },
       ]}
       />
-
-
-      {/*<Pagination*/}
-      {/*  totalListLength={data.length}*/}
-      {/*/>*/}
-    </div>
   );
 };
 

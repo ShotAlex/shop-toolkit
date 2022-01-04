@@ -51,36 +51,7 @@ const productsSlice = createSlice({
     error: '',
   },
 
-  reducers: {
-    // addProduct(state, action) {
-    //   const createAt = (new Date()).getTime()
-    //   const newProduct = {
-    //     ...action.payload,
-    //     id: createAt,
-    //     createAt: createAt.toString(),
-    //   }
-    //   state.data.push(newProduct)
-    // },
-    //
-    // removeProduct(state, action) {
-    //   const id = +action.payload
-    //   state.data = state.data.filter(el => {
-    //     return el.id !== id
-    //   })
-    // },
-    //
-    // saveEditProduct(state, action) {
-    //   const product = action.payload
-    //   const id = +product.id
-    //
-    //   state.data = state.data.map(el => {
-    //     if (el.id === id) {
-    //       return product
-    //     }
-    //     return el
-    //   })
-    // },
-  },
+  reducers: {},
 
   extraReducers: {
     // GET All Products
@@ -114,17 +85,8 @@ const productsSlice = createSlice({
 
     // CREATE product
     [createProduct.fulfilled]: (state, action) => {
-      // state.data.push(action.payload.data)
-      const product = action.payload.data
-      const id = +product.id
-
-      state.data = state.data.map(el => {
-        if (el.id === id) {
-          return product
-        }
-
-        return el
-      })
+      const createdProduct = action.payload.data
+      state.data.push(createdProduct)
     },
 
     // DELETE product

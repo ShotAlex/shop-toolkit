@@ -15,7 +15,6 @@ const EditProductPage = () => {
   const product = getChooseProduct(id)
 
   const saveEditProduct = async (el) => {
-    console.log(el)
     dispatch(updateProduct({id, data: el}))
     window.alert('Изменения сохранены!')
     // по-нормлаьному - должна быть всплывашка
