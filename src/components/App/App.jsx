@@ -13,13 +13,17 @@ import {getAllProducts} from "../../store/slices/productsSlice";
 const App = () => {
   const dispatch = useDispatch()
 
+  // const getAllProductRequest = useCallback(() => {
+  //   dispatch(getAllProducts())
+  //
+  // }, [dispatch])
+
   useEffect(() => {
-    const getAllProductRequest = () => {
+    const getAllProductRequest = () =>
       dispatch(getAllProducts())
-    }
 
     getAllProductRequest()
-  }, [])
+  }, [dispatch])
 
   return (
     <Routes>

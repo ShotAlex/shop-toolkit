@@ -1,9 +1,9 @@
 import React from 'react';
-import cl from './TotalCardsPerPage.module.scss'
 import {useDispatch, useSelector} from "react-redux";
 import {changeCardsPerPage} from "../../store/slices/productsParamsSlice";
-import Button from "../Button/Button";
 import {buttonsPerPage} from "../../utils/buttonsPerPage";
+import Button from "../Button/Button";
+import cl from './TotalCardsPerPage.module.scss'
 
 
 const TotalCardsPerPage = () => {

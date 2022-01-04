@@ -4,7 +4,9 @@
     <list default="true" id="aee04e78-9cc9-4634-981a-dad53b16def0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/CreateProductPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CreateProductPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TotalCardsPerPage/TotalCardsPerPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TotalCardsPerPage/TotalCardsPerPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TotalCardsPerPage/TotalCardsPerPage.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TotalCardsPerPage/TotalCardsPerPage.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/slices/productsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/productsSlice.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,8 +76,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -92,7 +94,7 @@
       <workItem from="1641287357873" duration="13797000" />
       <workItem from="1641306678394" duration="146000" />
       <workItem from="1641307335501" duration="3255000" />
-      <workItem from="1641310739036" duration="1617000" />
+      <workItem from="1641310739036" duration="3628000" />
     </task>
     <servers />
   </component>

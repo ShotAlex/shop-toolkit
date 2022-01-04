@@ -27,7 +27,11 @@ export const createProduct = createAsyncThunk(
       createAt: createAt.toString(),
     }
 
-    return createProductApi(data)
+    // return createProductApi(data)
+
+    const result = await createProductApi(data)
+    result.data = product
+    return result
   }
 )
 
