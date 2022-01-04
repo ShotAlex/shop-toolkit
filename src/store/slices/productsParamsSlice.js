@@ -8,8 +8,7 @@ const productsParamsSlice = createSlice({
     cardsPerPage: 8,
     activeTab: 1,
     filter: {
-      published: 'ALL',
-
+      published: true,
     }
   },
 
@@ -17,8 +16,6 @@ const productsParamsSlice = createSlice({
     changeCardsPerPage(state, action) {
       state.cardsPerPage = action.payload
     },
-
-
   }
 })
 

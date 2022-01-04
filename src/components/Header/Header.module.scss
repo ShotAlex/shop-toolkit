@@ -1,0 +1,36 @@
+.header {
+  border-bottom: 1px solid #ccc;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.navigation {
+  display: flex;
+}
+
+.active_link,
+.nav_link {
+  font-size: 1.6rem;
+  display: block;
+  padding: 12px 8px;
+
+  &:hover {
+    color: blue;
+  }
+}
+
+.active_link {
+  color: blue;
+}

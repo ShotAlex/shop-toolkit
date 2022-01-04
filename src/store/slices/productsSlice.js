@@ -1,12 +1,11 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
-import axios from "axios";
-import {BASE_URL_API} from "../components/constants";
+import {createProductApi, deleteProductApi, getAllProductsApi, updateProductApi} from "../../api";
 
 
 export const getAllProducts = createAsyncThunk(
   'products/getAllProducts',
   async () => {
-    return  await axios.get(BASE_URL_API)
+    return  getAllProductsApi()
   }
 )
 
@@ -14,13 +13,13 @@ export const updateProduct = createAsyncThunk(
   'products/updateProduct',
   async (obj, {dispatch}) => {
     const {id, data} = obj
-    return await axios.put(`${BASE_URL_API}/${id}`, data)
+    return updateProductApi(id, data)
   }
 )
 
 export const createProduct = createAsyncThunk(
   'products/createProduct',
-  async (product, {dispatch}) => {
+  async (product) => {
     const createAt = (new Date()).getTime()
     const data = {
       ...product,
@@ -28,14 +27,14 @@ export const createProduct = createAsyncThunk(
       createAt: createAt.toString(),
     }
 
-    return await axios.post(BASE_URL_API, data)
+    return createProductApi(data)
   }
 )
 
 export const deleteProduct = createAsyncThunk(
   'products/deleteProduct',
   async (id) => {
-    return  await axios.delete(`${BASE_URL_API}/${id}`)
+    return  deleteProductApi(id)
   }
 )
 

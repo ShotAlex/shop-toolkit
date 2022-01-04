@@ -1,0 +1,40 @@
+//.tabs {
+  //  display: grid;
+  //  grid-template-columns: 1fr 1fr auto;
+  //
+  //  font-size: 1.6rem;
+  //  padding: 20px;
+  //  background-color: lightgray;
+  //
+  //}
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+
+button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+&:hover {
+     background-color: #ddd;
+ }
+
+&.active {
+     background-color: #ccc;
+ }
+}
+}
+
+.tabcontent {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
