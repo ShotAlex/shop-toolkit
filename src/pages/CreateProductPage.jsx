@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import TitlePage from "../components/TitlePage/TitlePage";
 import {useDispatch} from "react-redux";
 import {productTemplate} from "../utils/productTemplate";
@@ -24,7 +24,6 @@ const CreateProductPage = () => {
         onClick={addProduct}
         buttonText='Создать продукт'
       />
-
     </>
   );
 };

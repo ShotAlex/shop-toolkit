@@ -14,7 +14,11 @@ const App = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(getAllProducts())
+    const getAllProductRequest = () => {
+      dispatch(getAllProducts())
+    }
+
+    getAllProductRequest()
   }, [])
 
   return (

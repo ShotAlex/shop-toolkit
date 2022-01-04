@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import cl from './ProductCardForm.module.scss';
 import Button from "../Button/Button";
 import noImg from '../../assets/images/no-image.jpg';
@@ -44,11 +44,11 @@ const ProductCardForm = ({productData, onClick, buttonText = 'Отправить
     }
   }
 
-  useEffect(() => {
-    // TODO: include Yup and delete that
-    checkErrors('title', product.title)
-    checkErrors('description', product.description)
-  }, [])
+  // useEffect(() => {
+  //   // TODO: include Yup and delete that
+  //   checkErrors('title', product.title)
+  //   checkErrors('description', product.description)
+  // }, [])
 
   return (
     <form className={cl.form}>
